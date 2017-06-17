@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HangMan Game</title>
+
+ 
+
+
+</head>
+<body>
+  <script type="text/javascript">
+
+
+<!--create empty variable for word (word), and prompt-->
+var word = prompt("Please enter your word for the game: " );
+
+<!--create empty array variable for guesses (guesses)-->
+var guesses = [];
+
+
+<!--convert word into variable array for each letter-->
+var wordArray = Array.from(word);
+</script>
+<!--User input guesses-->
+ 
+    
+
+    Please enter your guess
+<!-- <form>
+  <input id="input" type=text maxlength="1" style="width:10px">
+   <input type=button onclick="guessFunction()" value="guess">
+  </form> -->
+<br>
+ <script type="text/javascript">
+var words = word;
+    alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+
+
+var GuessWord = "";
+
+function init(word) {
+
+for(var i=0; i < word.length; i++);
+guessWord.charAt[i] = "_";
+
+}
+console.log(guessWord);
+
+
+//listen to the keyboard events
+document.addEventListener('keyup', function(e) { 
+	//Only intake alphabet numbers
+  if (e.keyCode > 64 && e.keyCode < 91 && alphabet.indexOf(e.key) > -1) { 
+  	//if clicked letter is included inside the words
+ /*   if (words.indexOf(e.key) > -1) { 
+    	 //then remove it from the alphabet
+      alphabet.splice(alphabet.indexOf(e.key), 1);
+      console.log('correct letter');
+
+    } else {
+      console.log('incorrect letter');
+    }//show the alphabet and its actual state
+    console.log(JSON.stringify(alphabet)); 
+
+  } */
+}; 
+
+<!--display list of user guesses from Guesses array-->
+
+
+
+<!--compare contents of word array with guesses array, loop-->
+
+
+	<!--if guess is incorrect add 1 to counter, when counter reaches 7, alert game lost-->
+	<!--else if guesses array contains contents of word, alert game win-->
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>
